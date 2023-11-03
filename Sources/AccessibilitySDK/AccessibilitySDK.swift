@@ -3,13 +3,6 @@
 
 import UIKit
 
-open class TestViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
-    open func printData(data: String) {
-        print(data)
-    }
+open func printData(data: String) {
+    print(data)
 }
