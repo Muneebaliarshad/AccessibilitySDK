@@ -8,7 +8,7 @@ import UIKit
 open class MagnifyingView: UIView {
 
     //MARK: - Properties
-    var viewToMagnify: UIView!
+    open var viewToMagnify: UIView!
     var touchPoint: CGPoint!
 
     //MARK: - Init Method
@@ -30,7 +30,7 @@ open class MagnifyingView: UIView {
         isUserInteractionEnabled = true
     }
 
-    func setTouchPoint(pt: CGPoint) {
+    open func setTouchPoint(pt: CGPoint) {
         touchPoint = pt
         center = CGPoint(x: pt.x, y: pt.y - 80)
     }
