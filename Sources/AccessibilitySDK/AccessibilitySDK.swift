@@ -3,7 +3,7 @@
 
 import UIKit
 
-class TestViewController: UIViewController {
+open class TestViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
