@@ -12,7 +12,7 @@ open class MagnifyingView: UIView {
     var touchPoint: CGPoint!
 
     //MARK: - Init Method
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
     }
