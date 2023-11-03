@@ -17,7 +17,7 @@ open class MagnifyingView: UIView {
         commonInit()
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         commonInit()
     }
@@ -35,7 +35,7 @@ open class MagnifyingView: UIView {
         center = CGPoint(x: pt.x, y: pt.y - 80)
     }
 
-    override func draw(_ rect: CGRect) {
+    open override func draw(_ rect: CGRect) {
         guard let context = UIGraphicsGetCurrentContext() else { return }
         context.translateBy(x: 1 * (self.frame.size.width * 0.5), y: 1 * (self.frame.size.height * 0.5))
         context.scaleBy(x: 1.5, y: 1.5) // 1.5 is the zoom scale
