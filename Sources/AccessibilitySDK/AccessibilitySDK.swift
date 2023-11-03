@@ -9,7 +9,7 @@ class TestViewController: UIViewController {
         super.viewDidLoad()
     }
 
-    public func printData(data: String) {
+    open func printData(data: String) {
         print(data)
     }
 }
